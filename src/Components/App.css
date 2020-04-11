@@ -1,0 +1,15 @@
+body{
+  margin:auto 0;
+}
+.container{
+  font-family:Arial;
+}
+/*
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 6fr 2fr 1fr;
+}
+.nav{
+  grid-column:1/-1;
+}*/

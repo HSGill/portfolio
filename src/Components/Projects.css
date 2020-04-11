@@ -1,0 +1,31 @@
+.project{
+background-image: linear-gradient(to right, rgba(0, 17, 95, 0), rgb(71, 125, 141));
+border: green;
+border: solid;
+}
+.grid-wrapper{
+    width:75%;
+    margin:0 auto;
+    border: solid;
+    border-color: yellow ;
+    display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+    /*
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ; */
+}
+.box >img{
+   width: 100%;
+}
+.box{
+    background-color: #444;
+    padding: 75px;
+    margin: 20px;
+    transition: ease 1s;
+}
+.box-a{
+    
+}
+.box:hover{
+    transform:scale(1.1) ;
+    cursor:pointer;
+}

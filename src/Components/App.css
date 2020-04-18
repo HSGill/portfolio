@@ -1,7 +1,7 @@
 
 body{
   margin:auto 0;
-  background-image: linear-gradient(to right, rgba(0, 17, 95, 0), rgb(71, 125, 141));
+  background-image: linear-gradient(to right, rgb(71, 125, 141), rgb(71, 125, 141));
 
 }
 .container{

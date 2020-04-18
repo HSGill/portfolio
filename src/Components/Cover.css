@@ -1,14 +1,10 @@
 .cover{
-    margin: auto;
+    margin-top: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 50vh;
-    border:solid ;
-border-color: red;   
-    
 }
 .imageCover{
     width: 30em;
-
 }

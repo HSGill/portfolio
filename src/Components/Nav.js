@@ -1,7 +1,12 @@
 import React from 'react';
 import './Nav.css';
 
-const Nav =() =>{
+class Nav extends React.Component{
+constructor(){
+    super();
+}
+render(){
+
     return(
     <nav className="sticky">
      <ul className="wrapper">
@@ -13,6 +18,8 @@ const Nav =() =>{
     </nav>
        
     )
+}
 
 }
+
 export default Nav;

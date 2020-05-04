@@ -28,7 +28,6 @@ class App extends React.Component {
     super();
   }
   render() {
-
     return (
       <div className="container">
       <Particles className='particles' params={particlesOptions}></Particles>
@@ -37,7 +36,6 @@ class App extends React.Component {
         <Projects></Projects>
         <Footer ></Footer>
       </div>
-    
     );
   }
 }

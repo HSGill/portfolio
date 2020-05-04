@@ -1,12 +1,30 @@
 import React from 'react';
 
-const Footer = () =>{
-    return (
-        <div className="grid-wrapper  ">
-        <h3>Location</h3>
-       </div>
-       
-    )
+
+
+
+class Footer extends React.Component{
+    constructor(props){
+        super(props);
+        this.state={
+            header:'Hello'
+        };
+    }
+    onclick = () => {
+       fetch('http://localhost:3001')
+        .then(response =>response.json())
+         .then(data => this.setState({header:data}));
+    }
+    render(){
+
+        return (
+            <div className="grid-wrapper  ">
+            <button onClick={this.onclick}>Fetch Data</button>
+            <div><h2>{this.state.header}</h2></div>
+           </div>
+           
+        )
+    }
 } 
 
 export default Footer;

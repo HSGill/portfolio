@@ -1,6 +1,6 @@
 .project{
-background-image: linear-gradient(to right, rgba(0, 17, 95, 0), rgb(71, 125, 141));
-} 
+    background-image: linear-gradient(to right, rgba(0, 17, 95, 0), rgb(71, 125, 141));
+    } 
 .grid-wrapper{
     margin:0 auto;
     display: flex;
@@ -12,6 +12,7 @@ background-image: linear-gradient(to right, rgba(0, 17, 95, 0), rgb(71, 125, 141
 }
 .box >img{
     width: 25em;
+    justify-content: center;
 }
 .box{
     margin: 5px;
@@ -22,6 +23,8 @@ background-image: linear-gradient(to right, rgba(0, 17, 95, 0), rgb(71, 125, 141
 .box:hover{
     transform:scale(1.05) ;
     cursor:pointer;
+
+   
 }
 @media only screen  and  (max-width:600px){
     .wrapper{

@@ -10,9 +10,9 @@ render(){
 
     return(
     <nav className="sticky wrapper">
-  
+        
      <ul className="wrapper">
-        <li className="home "><a href="./">Harry</a></li>
+        <li className="home "><a href="./">LOGO</a></li>
         <li><a href="./">Home</a></li>
         <li><a href="./">Projects</a></li>
         <li><a href="./">About</a></li>

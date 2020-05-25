@@ -3,21 +3,28 @@ import './Projects.css'
 import image from "../images/cabin.png"
 import image1 from "../images/safe.png"
 import image2 from "../images/game.png"
-import PopUp from './PopUp.js';
 
 class Projects extends React.Component{
     constructor(){
         super();
         this.state={
-          showpopup:false
+          
         };
     }
-    popUp (){
-        this.setState({showpopup:!this.state.showpopup});
+   
+    async getProject (){
+        let response= await fetch('http://localhost:3001');
+        let data = await response.json();
+        console.log(data);
     }
 
-    async getProject (){
-        let response= await fetch('')
+    async getProjectsGithub (){
+        let response = await fetch('https://api.github.com/user/repos',{
+            method: "GET",
+            headers:{
+                'Authorization' : 'bearer' + ''
+            }
+        })
     }
     render(){
         return (
@@ -31,8 +38,11 @@ class Projects extends React.Component{
              <div  className='box '><img src={image1} alt="data_Store"></img> </div>
              <div className='box ' ><img src={image} alt="data_Store"></img> </div> */}
 
-             <div  className='box'><img src={image1} alt="data_Store"></img> </div>
-             
+             <div  className='box'><img src={image1} alt="data_Store" onClick={this.getProject}></img> </div>
+             <div  className='box '><img src={image2} alt="data_Store"></img> </div>
+             <div  className='box '><img src={image1} alt="data_Store"></img> </div>
+             <div  className='box '><img src={image2} alt="data_Store"></img> </div>
+
            </div>
            
         )

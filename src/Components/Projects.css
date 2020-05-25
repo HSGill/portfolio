@@ -2,7 +2,7 @@
     background-image: linear-gradient(to right, rgba(0, 17, 95, 0), rgb(71, 125, 141));
     } 
 .grid-wrapper{
-    margin:0 auto;
+    margin:20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -11,11 +11,11 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr ; */
 }
 .box >img{
-    width: 25em;
+    width: 20em;
     justify-content: center;
 }
 .box{
-    margin: 5px;
+    margin: 2em;
     flex: 0 0 25%;
     transition: ease 0.3s;
 }

@@ -2,14 +2,12 @@ import React from 'react';
 import Cover from './Cover';
 import Projects from './Projects';
 import Particles from 'react-particles-js';
-//import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
 
 //import logo from './logo.svg';
 import './App.css';
 import Nav from './Nav.js';
 import Footer from './Footer.js'
-import Fade from 'react-reveal/Fade';
-
 
 const particlesOptions = {
   particles: {
@@ -35,12 +33,10 @@ class App extends React.Component {
     return (
       <div className="container">
       <Particles className='particles' params={particlesOptions}></Particles>
-<Nav></Nav>
- <Cover></Cover>
- <Projects></Projects>
-
- <Fade><Footer></Footer></Fade>
-        
+        <Nav></Nav>
+        <Cover> </Cover>
+        <Projects></Projects>
+        <Footer ></Footer>
       </div>
     );
   }

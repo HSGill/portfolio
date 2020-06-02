@@ -6,11 +6,10 @@ class Footer extends React.Component{
             header:''
         };
     }
-    onclick = () => {
-       fetch('http://localhost:3001')
-        .then(response =>response.json())
-         .then(data => this.setState({header:data}));
-    }
+    async onclick () {
+     let resp =  await  fetch('http://localhost:3001')
+        let response = await resp.json()
+console.log(response)    }
     render(){
 
         return (

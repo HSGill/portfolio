@@ -28,14 +28,23 @@ const particlesOptions = {
 class App extends React.Component {
   constructor(props) {
     super();
+    this.state ={
+      proj:[]
+    }
+  }
+  componentDidMount (){
+    fetch("http://localhost:3001")
+    .then(response => response.json())
+    .then(users => {this.setState({proj: users})})
+    .catch(error=> console.log(error));
   }
   render() {
     return (
       <div className="container">
-      <Particles className='particles' params={particlesOptions}></Particles>
+      {/* <Particles className='particles' params={particlesOptions}></Particles> */}
         <Nav></Nav>
-        <Cover> </Cover>
-        <Projects></Projects>
+        <Cover> </Cover> 
+        <Projects projGit={this.state.proj}></Projects>
         <Footer ></Footer>
       </div>
     );

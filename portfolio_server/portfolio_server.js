@@ -10,9 +10,8 @@ app.get('/',  async function(req,res) {
    let response = await fetch('https://api.github.com/user/repos', {
       method:'GET',
       headers: {
-         'Authorization': 'Bearer ' + 'ab732bd33b14a66290252d01e91d8170647e2344',
+         'Authorization': 'Bearer ' + 'f77c007cbe70a0ddd35f9760b93aa3baba306671 ', 
          'Content-Type': 'application/json'
-
       }
    })
 let data = await response.json();

@@ -29,7 +29,8 @@ class App extends React.Component {
   constructor(props) {
     super();
     this.state ={
-      proj:[]
+      proj:[],
+      route:'home'
     }
   }
   componentDidMount (){
@@ -42,7 +43,7 @@ class App extends React.Component {
     return (
       <div className="container">
       {/* <Particles className='particles' params={particlesOptions}></Particles> */}
-        <Nav></Nav>
+        <Nav></Nav>      
         <Cover> </Cover> 
         <Projects projGit={this.state.proj}></Projects>
         <Footer ></Footer>

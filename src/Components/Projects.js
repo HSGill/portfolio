@@ -7,7 +7,9 @@ import Card from './Card.js'
 
 const Projects = ({projGit}) =>{
   return (
+
     <div className="grid-wrapper  ">
+
       {
         projGit.map((user,i) => {
           return(

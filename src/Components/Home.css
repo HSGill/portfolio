@@ -1,0 +1,7 @@
+.container{
+    /*display: grid; 
+    grid-template-columns: 1fr;  */
+    font-family:Arial;
+    margin-right: auto;
+    margin-left: auto;
+  }

@@ -15,30 +15,53 @@ body{
 .container{
   background-color: rgb(238, 238, 238); 
   display: flex; 
-   padding: 10px; 
+  flex-wrap: wrap;
+width: 100%;   padding: 10px; 
    height: 100vh;
-   justify-content: center;
+   align-items: stretch;
   /*display: grid; 
   grid-template-columns: 1fr;  */
   
 }
 .left {
-  border-right: 1px solid rgb(203, 203, 204);
-  width: 50%;
+  /*border-right: 1px solid rgb(203, 203, 204); */
   display: flex;
+  flex-basis: 100%;
+  flex:1;
   flex-direction: column;
 }
 .right{
   display: flex;
+  flex-basis: 100%;
+  flex:1.7 1 0%;
   flex-direction: column;
-  width: 50%;
+  overflow: auto;
 }
 .right-top{
-  border-bottom: 1px solid rgb(203, 203, 204);
-  height: 50vh;
-  justify-content: center;
   display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(203, 203, 204);
+   flex: 2 2 ;
+}
+.projects{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#about p{
+  font-size: 1.5em;
+  color: black;}
+#about-me {
+  display: flex;
+  flex-direction: row; 
+}
 
+.right-bottom{
+  flex: 2 2 ;
+  display: flex;
+  justify-content: center;
 }
 .intro{
   display: flex;
@@ -52,11 +75,7 @@ body{
   box-shadow: lightgrey -1px 4px 3px;
   align-self: center;
 }
-.right-bottom{
-    height: 50vh;
-    justify-content: center;
-    display: flex;
-}
+
 
 .logo{
   height: 50px;
@@ -72,7 +91,10 @@ body{
   font-size: 1em;
   color: black;
 }
-
+.projects img{
+  width: 96px;
+  height: 96px;
+}
 .links{
 display: flex;
 flex-direction: row;
@@ -88,7 +110,7 @@ justify-content: center;
 }
 .links a:hover{
  transform: scale(1.5);
- transition: ease-in-out 0.4s;
+ transition: ease 0.2s;
 }
 .particles{
   position: fixed;

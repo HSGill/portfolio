@@ -80,21 +80,25 @@ class App extends React.Component {
             <div id="about">
               <p >About Me</p>
               <div id="about-me">
-                <div>      I am having experience as full stack
-                development.I've worked
-</div><div>
-                  on multiple projects, and has experience with
-                  end to end
-</div>
-                <div> development and deployment of web applications.
-</div>
-              </div>
-            </div>
+<div>I am having experience as full stack
+development.I've worked
+</div><div>on multiple projects, and has experience with
+ end to end
+</div><div> development and deployment of web applications.
+</div></div></div>
 
 <div className="projects">
+  <div className="inside-projects">
   <img src={projects} alt="projects"></img>
-  <img src={opensource} alt="opensource"></img>
-  <img src={projects} alt="projects"></img>
+  <p></p>
+  </div>
+  <div className="inside-projects"><img src={opensource} alt="opensource"></img>
+  <p></p>
+</div>
+<div className="inside-projects">
+<img src={projects} alt="projects"></img>
+<p></p>
+</div>
 </div>
           </div>
           <div className="right-bottom"><h2>Projects</h2></div>

@@ -15,14 +15,13 @@ class Home extends React.Component {
     fetch('https://api.github.com/user/repos', {
       method:'GET',
       headers: {
-         'Authorization': 'Bearer ' + '38ddddcd2ce40047b4a2aba9a908bf1648c27ea1', 
+         'Authorization': 'Bearer ' + '67899ab8080223e610d158cc815d48d840dea02a', 
          'Content-Type': 'application/json'
       }
    })
    .then(response=>response.json())
    .then(users=> {this.setState({proj: users})})
    .catch(error=> console.log(error));
-
   }
   render() {
     return (

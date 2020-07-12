@@ -4,8 +4,8 @@
 .grid-wrapper{
     margin:10px;
     display: flex;
-flex-flow: row wrap;   
- justify-content: center;
+   flex-flow: row wrap;   
+   justify-content: center;
     
     /*
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 

@@ -15,7 +15,7 @@ class Home extends React.Component {
     fetch('https://api.github.com/user/repos', {
       method:'GET',
       headers: {
-         'Authorization': 'Bearer ' + '67899ab8080223e610d158cc815d48d840dea02a', 
+         'Authorization': 'Bearer ' + 'f37457acc423764b825fd830bc52084d8b7ba382', 
          'Content-Type': 'application/json'
       }
    })

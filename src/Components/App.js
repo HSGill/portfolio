@@ -44,7 +44,7 @@ class App extends React.Component {
       <Footer ></Footer>*/}
       {/*Left Panel */}
       <Switch>
-      <Route exact path='/portfolio' component={HomePage} ></Route>
+      <Route exact path='/' component={HomePage} ></Route>
       <Route exact path='/projects' component={Home}></Route>
       </Switch>
 </div>

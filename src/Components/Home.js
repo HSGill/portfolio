@@ -17,7 +17,7 @@ class Home extends React.Component {
     fetch('https://api.github.com/user/repos', {
       method:'GET',
       headers: {
-         'Authorization': 'Bearer ' + '6fe2c1a2443a211ee16d5f4cede63cb9bfff1b93', 
+         'Authorization': 'Bearer ' + '32956a84aeb76a8eca0912fa54e1398e204b1ffd', 
          'Content-Type': 'application/json'
       }
    })
@@ -28,7 +28,7 @@ class Home extends React.Component {
   render() {
     return (
       <div className="container">
-      <Link style={{  color: 'inherit', textDecoration: 'inherit'}} to='/portfolio'>
+      <Link style={{  color: 'inherit', textDecoration: 'inherit'}} to='/'>
        <img className="logo" src={image} alt="portfolio" ></img>
         </Link>
 

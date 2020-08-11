@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.c77da519.chunk.css",
+    "main.js": "/portfolio/static/js/main.866dde0a.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.866dde0a.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.f0ff35d1.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.f0ff35d1.js.map",
+    "static/js/2.5232e042.chunk.js": "/portfolio/static/js/2.5232e042.chunk.js",
+    "static/js/2.5232e042.chunk.js.map": "/portfolio/static/js/2.5232e042.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.72eabd9448ce8ff1297ecd29a35b1034.js": "/portfolio/precache-manifest.72eabd9448ce8ff1297ecd29a35b1034.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.c77da519.chunk.css.map": "/portfolio/static/css/main.c77da519.chunk.css.map",
+    "static/js/2.5232e042.chunk.js.LICENSE.txt": "/portfolio/static/js/2.5232e042.chunk.js.LICENSE.txt",
+    "static/media/HG-logo.png": "/portfolio/static/media/HG-logo.b847c0c5.png",
+    "static/media/Octocat.png": "/portfolio/static/media/Octocat.ef468e27.png",
+    "static/media/cabin.png": "/portfolio/static/media/cabin.56ec4ee7.png",
+    "static/media/cv.png": "/portfolio/static/media/cv.6d3418fe.png",
+    "static/media/game.png": "/portfolio/static/media/game.107d31e8.png",
+    "static/media/open-source.png": "/portfolio/static/media/open-source.957c1c68.png",
+    "static/media/profile.png": "/portfolio/static/media/profile.55a31366.png",
+    "static/media/safe.png": "/portfolio/static/media/safe.7dfdcf55.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f0ff35d1.js",
+    "static/js/2.5232e042.chunk.js",
+    "static/css/main.c77da519.chunk.css",
+    "static/js/main.866dde0a.chunk.js"
+  ]
+}

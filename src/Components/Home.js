@@ -13,22 +13,16 @@ class Home extends React.Component {
       route:'home'
     }
   }
-  componentDidMount (){
-    fetch('https://api.github.com/user/repos', {
-      method:'GET',
-      headers: {
-         'Authorization': 'Bearer ' + '32956a84aeb76a8eca0912fa54e1398e204b1ffd', 
-         'Content-Type': 'application/json'
-      }
-   })
-   .then(response=>response.json())
-   .then(users=> {this.setState({proj: users})})
-   .catch(error=> console.log(error));
+  componentDidMount(){
+    fetch('https://whispering-garden-87890.herokuapp.com/')
+    .then(response=>response.json())
+    .then(users=> {this.setState({proj: users})})
+    .catch(error=> console.log(error));
   }
   render() {
     return (
       <div className="container">
-      <Link style={{  color: 'inherit', textDecoration: 'inherit'}} to='/'>
+      <Link style={{  color: 'inherit', textDecoration: 'inherit'}} to='/portfolio'>
        <img className="logo" src={image} alt="portfolio" ></img>
         </Link>
 

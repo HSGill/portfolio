@@ -17,13 +17,12 @@ class HomePage extends React.Component {
   constructor(props) {
     super();
     this.state = {
+   
       route: 'home'
     }
   }
-  onClickProjects = (event)=>{
-    this.setState({route:'projects'})
-    console.log(this.state.route);
-  }
+ 
+
   render() {
     return (
      <div className="container">
@@ -42,6 +41,7 @@ class HomePage extends React.Component {
 
               <img className="" src={github} alt="portfolio" ></img>
             </a>
+            
             <a href="https://www.linkedin.com/in/harjotgill73/" target="_blank">
 
               <img className="" src={linkedin} alt="portfolio" ></img>
@@ -69,7 +69,7 @@ end to end
 </div> development and deployment of web applications.
 </div></div>
 
-<div className="projects">
+<div className="projects" >
 <div className="inside-projects">
 <Link style={{  color: 'inherit', textDecoration: 'inherit'}} to='/projects'>
 

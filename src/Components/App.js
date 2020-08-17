@@ -28,13 +28,10 @@ class App extends React.Component {
   constructor(props) {
     super();
     this.state = {
-      route: 'home'
+      proj:[]
     }
   }
-  onClickProjects = (event)=>{
-    this.setState({route:'projects'})
-    console.log(this.state.route);
-  }
+
   render() {
     return (
      <div className="container">

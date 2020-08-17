@@ -13,11 +13,11 @@ class Home extends React.Component {
       route:'home'
     }
   }
-  componentDidMount(){
+  componentDidMount (){
     fetch('https://whispering-garden-87890.herokuapp.com/')
-    .then(response=>response.json())
-    .then(users=> {this.setState({proj: users})})
-    .catch(error=> console.log(error));
+   .then(response=>response.json())
+   .then(users=> {this.setState({proj: users})})
+   .catch(error=> console.log(error));
   }
   render() {
     return (
